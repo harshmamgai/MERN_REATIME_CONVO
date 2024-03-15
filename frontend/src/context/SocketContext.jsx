@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("https://mern-reatime-convo.onrender.com/login", {
+			const socket = io("https://mern-reatime-convo.onrender.com", {
 				query: {
 					userId: authUser._id,
 				},
